@@ -1,0 +1,103 @@
+.basket_container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 100px auto;
+    width: 60%;
+
+    &_card {
+      width: 350px;
+      height: 504px;
+      &:hover img {
+        scale: 120%;
+      }
+      .image {
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        transition: 300ms;
+        img {
+          transition: 300ms;
+
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .operations {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        .reviews {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          .star {
+            i {
+              color: #f89d13;
+            }
+          }
+          .like {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            i {
+              cursor: pointer;
+              transition: 300ms;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+        .title {
+          transition: 300ms;
+          cursor: pointer;
+          font-size: 18px;
+          &:hover {
+            color: #f16821;
+          }
+        }
+        .desc {
+          color: #808080;
+        }
+        .butons {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          .left {
+            font-weight: 700;
+            font-size: 15px;
+            border: none;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+          }
+          .right {
+            font-weight: 700;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: inherit;
+            color: rgb(0, 0, 0);
+          }
+          button {
+            padding: 8px 20px;
+            cursor: pointer;
+          }
+        }
+        button{
+            font-weight: 700;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: black;
+            color:white;
+            padding: 8px 20px;
+            cursor: pointer;
+
+        }
+      }
+    }
+  }
+.empty{
+    margin-top: 100px;
+}

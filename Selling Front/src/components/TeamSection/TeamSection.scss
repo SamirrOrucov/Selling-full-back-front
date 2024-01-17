@@ -1,0 +1,52 @@
+.team {
+  max-width: 100vw;
+  &_container {
+    display: flex;
+    max-width: 60%;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 50px;
+    &_head {
+      text-align: center;
+      p {
+        color: #adb5bd  ;
+      }
+      h6 {
+        font-size: 40px;
+      }
+    }
+    &_cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+}
+@media (max-width: 575.98px) { 
+
+    .team {
+        max-width: 100vw;
+        margin-top: 50px;
+        &_container {
+          display: flex;
+          max-width: 60%;
+          flex-direction: column;
+          margin: 0 auto;
+          gap: 50px;
+          &_head {
+            text-align: center;
+            p {
+              color: #adb5bd  ;
+            }
+            h6 {
+              font-size: 40px;
+            }
+          }
+          &_cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 70px;
+          }
+        }
+      }
+ }

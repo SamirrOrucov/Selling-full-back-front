@@ -1,0 +1,93 @@
+.header {
+  background-image: url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: brightness(60%);
+
+  &_container {
+    color: white;
+    max-width: 40%;
+    &_text {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      z-index: 4;
+
+      h5 {
+        font-size: 80px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .btns {
+        display: flex;
+        gap: 5px;
+        button {
+          cursor: pointer;
+        }
+        .left {
+          font-weight: 700;
+          border: 2px solid white;
+          background-color: inherit;
+          width: 150px;
+          height: 50px;
+          color: white;
+        }
+        .right {
+          font-weight: 700;
+          font-size: 15px;
+          border: none;
+          background-color: white;
+          width: 200px;
+          height: 50px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 600px) { 
+
+    .header {
+       
+       
+        &_container {
+          color: white;
+          max-width: 60%;
+          &_text {
+            z-index: 4;
+      
+            h5 {
+              font-size: 35px;
+              text-wrap: nowrap;
+            }
+            p {
+              font-size: 18px;
+            }
+            .btns {
+              display: flex;
+              gap: 5px;
+              button {
+                cursor: pointer;
+              }
+              .left {
+                width: 120px;
+                height: 50px;
+              }
+              .right {
+                font-size: 15px;
+                width: 150px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+ }
